@@ -1,0 +1,21 @@
+
+PHP Version: PHP 8.2.12
+MYSQL Version: 8.0.31 
+Laravel Version: Laravel Framework 10.48.27
+
+// Command to start the Laravel development server
+php artisan serve
+
+//Always activate your virtual environment before running your app
+venv\Scripts\activate
+
+// Run the Server Using Uvicorn-ASGI server
+uvicorn app:app --host 0.0.0.0 --port 8001 --reload
+
+uvicorn	ASGI server
+app:app	app.py (filename) contains app = FastAPI() (instance)
+--host 0.0.0.0	:Exposes the app to the network (accessible from other devices)
+--port 8001	:Runs the app on port 8001
+--reload	:Auto-reloads the server on code changes (for development)
+
+ 
